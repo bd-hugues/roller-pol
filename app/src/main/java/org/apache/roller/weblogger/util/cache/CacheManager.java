@@ -160,6 +160,8 @@ public final class CacheManager {
             // ask our default cache factory for a new cache instance
             cache = cacheFactory.constructCache(properties);
         }
+
+        cacheFactory.constructCache(properties);
         
         if(cache != null) {
             caches.put(cache.getId(), cache);
