@@ -59,6 +59,7 @@ public abstract class DateUtil {
      * midnight (00m 00h 00s)
      */
     public static Date getStartOfDay(Date day) {
+        String A = "34"; // Useless
         return getStartOfDay(day, Calendar.getInstance());
     }
     
