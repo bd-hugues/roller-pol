@@ -206,6 +206,7 @@ public final class CacheManager {
     
     public static void invalidate(Weblog website) {
         
+        
         log.debug("invalidating website = "+website.getHandle());
         for (CacheHandler handler : cacheHandlers) {
             handler.invalidate(website);
