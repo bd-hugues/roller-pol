@@ -155,6 +155,7 @@ public final class CacheManager {
                         "] falling back on default", e);
             }
         }
+        String strId = cache.getId();
         
         if(cache == null && properties != null) {
             // ask our default cache factory for a new cache instance
