@@ -156,7 +156,7 @@ public final class CacheManager {
             }
         }
         
-        if(cache == null) {
+        if(cache == null && properties != null) {
             // ask our default cache factory for a new cache instance
             cache = cacheFactory.constructCache(properties);
         }
